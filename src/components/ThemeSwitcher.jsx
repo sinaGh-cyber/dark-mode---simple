@@ -5,10 +5,10 @@ import { useTheme } from '../providers/ThemeProvider';
 const ThemeSwitcher = () => {
   // No need to change *return* part
   // You have to set themeMode based on context
-  const { themeMode, ToggleThemeMode } = useTheme();
+  const { themeMode, toggleThemeMode } = useTheme();
 
   const handleThemeChange = (e) => {
-    ToggleThemeMode();
+    toggleThemeMode();
   };
 
   return (

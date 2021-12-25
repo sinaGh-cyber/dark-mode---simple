@@ -6,13 +6,13 @@ const ThemeContext = createContext(undefined);
 
 const ThemeProvider = ({ children }) => {
   const [themeMode, setThemeMode] = useState(THEME_TYPE.LIGHT);
-  const ToggleThemeMode = () => {
+  const toggleThemeMode = () => {
     setThemeMode((old) =>
       old === THEME_TYPE.LIGHT ? THEME_TYPE.DARK : THEME_TYPE.LIGHT
     );
   };
   return (
-    <ThemeContext.Provider value={{themeMode, ToggleThemeMode}}>
+    <ThemeContext.Provider value={{themeMode, toggleThemeMode}}>
       {children}
     </ThemeContext.Provider>
   );
