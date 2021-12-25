@@ -5,14 +5,14 @@ import { THEME_TYPE } from '../constants';
 const ThemeContext = createContext(undefined);
 
 const ThemeProvider = ({ children }) => {
-  const [ThemeMode, setThemeMode] = useState(THEME_TYPE.LIGHT);
+  const [themeMode, setThemeMode] = useState(THEME_TYPE.LIGHT);
   const ToggleThemeMode = () => {
     setThemeMode((old) =>
       old === THEME_TYPE.LIGHT ? THEME_TYPE.DARK : THEME_TYPE.LIGHT
     );
   };
   return (
-    <ThemeContext.Provider value={{ThemeMode, ToggleThemeMode}}>
+    <ThemeContext.Provider value={{themeMode, ToggleThemeMode}}>
       {children}
     </ThemeContext.Provider>
   );
