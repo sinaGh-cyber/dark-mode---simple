@@ -7,9 +7,9 @@ const ThemeSwitcher = () => {
   // You have to set themeMode based on context
   const { themeMode, toggleThemeMode } = useTheme();
 
-  const handleThemeChange = (e) => {
-    toggleThemeMode();
-  };
+  // const handleThemeChange = (e) => {
+  //   toggleThemeMode();
+  // };
 
   return (
     <div className="switch-container">
@@ -18,7 +18,7 @@ const ThemeSwitcher = () => {
           data-testid="theme-changer"
           type="checkbox"
           checked={themeMode === THEME_TYPE.DARK}
-          onChange={handleThemeChange}
+          onChange={toggleThemeMode()}
         />
         <span className="slider round"></span>
       </label>
