@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+// import React, { useContext } from 'react';
 import NameBox from './components/NameBox';
 import ThemeSwitcher from './components/ThemeSwitcher';
-import { THEME_TYPE } from './constants';
+// import { THEME_TYPE } from './constants';
 import Styles from './data/Styles';
 import ThemeProvider, { useTheme } from './providers/ThemeProvider';
 
