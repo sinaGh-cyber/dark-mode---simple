@@ -12,11 +12,11 @@ const ThemeProvider = ({ children }) => {
     );
   };
   return (
-    <ThemeContext.Provider value={{themeMode, toggleThemeMode}}>
+    <ThemeContext.Provider value={{ themeMode, toggleThemeMode }}>
       {children}
     </ThemeContext.Provider>
   );
 };
 const useTheme = () => useContext(ThemeContext);
 export default ThemeProvider;
-export { useTheme };
+export { useTheme, ThemeContext };
